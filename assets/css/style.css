@@ -11,3 +11,10 @@
       display: inline-block;
       width: 16.575%;
     }
+
+#comments-input  {
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
