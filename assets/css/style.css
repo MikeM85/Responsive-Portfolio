@@ -2,12 +2,25 @@
     box-sizing: border-box;  
 
   }
+
+  #divContainer { margin: 0 auto; width: 800px; }
+
+    .divImageHolder { 
+      float:left;
+      border: 5px solid #000;
+      height: auto;
+      width: auto;
+      margin: 10px;
+     }
+
+    .clear { clear:both; }
   
-.img {float: left;
+img {
     width: 250px;
 }
 
-orm {
+
+form {
   /* Just to center the form on the page */
   margin: 0 auto;
   width: 400px;
