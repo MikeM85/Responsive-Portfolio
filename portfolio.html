@@ -14,35 +14,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 </style>
-<body>
+<body id="background">
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-      <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Recent Projects Page</a>
-      
-    </div>
-  
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">About</a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
-      <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Recent Projects Page</a>
-      
-    </div>
+  <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Recent Projects Page</a>
+    
   </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Recent Projects Page</a>
+    
+  </div>
+</div>
 
 <!-- Header -->
 <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin ">Recent Projects Page</h1>
-  
-  </header>
+  <h1 class="w3-margin ">Recent Projects Page</h1>
 
-  <div id="background">
-  <div id="divContainer">
+</header>
+
+ <div>
+   <div>
+ 
+  <div id="divContainer" class="w3-center" class="w3-full">
       <div class="divImageHolder">
           <img src="assets/images/quiz.jpg" alt="Thing">
               
@@ -66,18 +68,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
           </div>
       </div>
-      <br class="clear" />
-</div>
+    </div>
+    
 </div> 
+</div> 
+
+
 
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
   <div class="w3-xlarge w3-padding-32">
-    <a href="https://github.com/MikeM85" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/michael-meleck-a25a6a8a/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/MikeM85" target="_blank"><i class="fa fa-github w3-red"></i></a>
+    <a href="https://www.linkedin.com/in/michael-meleck-a25a6a8a/" target="_blank"><i class="fa fa-linkedin w3-red"></i></a>
     
 
+</footer>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -85,7 +91,8 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } 
+  else { 
     x.className = x.className.replace(" w3-show", "");
   }
 }

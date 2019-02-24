@@ -9,26 +9,28 @@
 
   #background{
     background-image:  url(https://picsum.photos/800/900/?random); 
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
     background-size: cover;
   }
 
-  #divContainer { 
-    margin: 0 auto; width: 960px;
-    
-   }
+  
+  /* Clearfix (clear floats) */
+  #divContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
     .divImageHolder {
-      float:left;
+      /* float: left; */
+      display:inline-block;
+      width: auto;
+      padding: 5px;
       border: 5px solid #000;
       height: auto;
-      width: auto;
       margin: 10px;
      }
 
-    .clear { clear:both; }
   
 img {
     width: 250px;
@@ -80,3 +82,4 @@ button {
   /* This extra margin represent roughly the same space as the space between the labels and their text fields */
   margin-left: .5em;
 }
+
