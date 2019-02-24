@@ -3,9 +3,24 @@
 
   }
 
-  #divContainer { margin: 0 auto; width: 800px; }
+  .text {
+    background-color: aqua;
+  }
 
-    .divImageHolder { 
+  #background{
+    background-image:  url(https://picsum.photos/800/900/?random); 
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+  }
+
+  #divContainer { 
+    margin: 0 auto; width: 960px;
+    
+   }
+
+    .divImageHolder {
       float:left;
       border: 5px solid #000;
       height: auto;
